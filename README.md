@@ -15,9 +15,8 @@ $ npm run dev
 $ npm run build
 $ npm run start
 
-# generate static project
-$ npm run generate
-```
+# 启动redis
+$ redis-server 
 
 # 代码管理流程
 $ git branch ***          创建业务功能分支
