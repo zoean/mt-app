@@ -29,7 +29,7 @@
                 :key="idx">{{item.name}}</dd>
           </dl>
         </div>
-        <p class="suggset">
+        <p class="suggest">
           <a href=""
              v-for="(item,idx) in $store.state.home.hotPlace.slice(0,5)"
              :key="idx">{{item.name}}</a>
