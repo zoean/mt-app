@@ -15,8 +15,8 @@ $ npm run dev
 $ npm run build
 $ npm run start
 
-# generate static project
-$ npm run generate
-```
+# 启动redis
+$ redis-server 
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+#连接 mongodb数据库
+$ mongod --dbpath "/e/mongoose"
