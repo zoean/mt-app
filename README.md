@@ -17,6 +17,8 @@ $ npm run start
 
 # 启动redis
 $ redis-server 
+#启动mongodb
+$ mongod --dbpath '路径'
 
 # 代码管理流程
 $ git branch ***          创建业务功能分支
