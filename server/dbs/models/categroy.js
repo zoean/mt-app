@@ -10,7 +10,7 @@ const Categroy = new Schema({
   },
   areas: {
     type: Array,
-    required: true
+    require: true
   }
 })
 
