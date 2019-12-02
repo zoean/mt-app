@@ -30,4 +30,6 @@ $ git merge ***           把当前分支合并到master分支
 $ git push                将本次分支合并推送到远程仓库
 
 
+
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
