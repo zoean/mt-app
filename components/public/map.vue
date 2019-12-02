@@ -34,7 +34,8 @@ export default {
     }
   },
   mounted () {
-    let self = thisself.id = `map${Math.random().toString().slice(4, 6)}`
+    let self = this
+    self.id = `map${Math.random().toString().slice(4, 6)}`
     window.onmaploaded = () => {
       let map = new window.AMap.Map(self.id, {
         resizeEnable: true,

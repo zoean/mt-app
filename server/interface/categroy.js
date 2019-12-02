@@ -11,7 +11,7 @@ router.get('/crumbs', async (ctx) => {
     status,
     data: {
       areas,
-      type
+      types
     }
   } = await axios.get('http://cp-tools.cn/categroy/crumbs', {
     params: {

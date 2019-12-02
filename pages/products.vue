@@ -23,14 +23,15 @@ export default {
   components: {
     Crumbs,
     Categroy,
-    List
+    List,
+    Amap
   },
   data () {
     return {
       list: [],
       types: [],
       areas: [],
-      keyword,
+      keyword: '',
       point: []
     }
   },
@@ -48,16 +49,17 @@ export default {
         city
       }
     })
-    console.log(count, areas, types)
+    console.log(types)
     if (status === 200 && count > 0 && status2 === 200) {
       return {
-        list: pois.filter(item => item.photos.length).map(item => {
+        list: pois.map(item => {
           return {
-            type: item.types,
-            img: item.photos[0].url,
+            type: item.type,
+            img: 'https://img1.sycdn.imooc.com/szimg/5db7fa5e099d025a40000800.jpg',
             name: item.name,
-            comment: Math.floor(Math.randow() * 10000),
+            comment: Math.floor(Math.random() * 10000),
             rate: Number(item.biz_ext.cost),
+            price: Number(item.biz_ext.cost),
             scene: item.tag,
             tel: item.tel,
             status: '可订明日',
